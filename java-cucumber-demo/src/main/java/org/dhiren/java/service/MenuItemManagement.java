@@ -28,10 +28,6 @@ public class MenuItemManagement {
         return restaurantMenuItemList.stream().anyMatch(item -> itemName.equalsIgnoreCase(item.getName()));
     }
 
-    public static boolean itemExists(RestaurantMenuItem item) {
-        return restaurantMenuItemList.contains(item);
-    }
-
     public static boolean bothItemAvailable(List<String> itemList) {
 
         final List<RestaurantMenuItem> menuItems = restaurantMenuItemList.stream().filter(item -> itemList.contains(item.getName()))

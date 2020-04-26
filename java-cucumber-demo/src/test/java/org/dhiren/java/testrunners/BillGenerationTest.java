@@ -9,8 +9,8 @@ import org.junit.runner.RunWith;
         strict = true,
         features = {"src/test/java/org/dhiren/java/features"},
         glue = {"org.dhiren.java.steps", "org.dhiren.java.hooks"},
-        tags = {"@IndividualTest"},
+        tags = {"@BillGenerationMultipleTest"},
         plugin = {"pretty"})
-public class MenuManagementTest {
+public class BillGenerationTest {
 
 }

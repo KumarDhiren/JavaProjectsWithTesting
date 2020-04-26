@@ -65,8 +65,4 @@ public class MenuManagementStepDefinitions {
         Assert.assertEquals(arg0, errorMessage);
     }
 
-    @Then("Clear the list")
-    public void clearTheList() {
-        clear();
-    }
 }

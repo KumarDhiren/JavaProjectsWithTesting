@@ -10,21 +10,18 @@ Feature: Menu Management
     Given I have a menu item name "Chicken Biryani" and price 300
     When I add that menu item
     Then Menu item with name "Chicken Biryani" should be added
-    Then Clear the list
 
   @RegularTest @FinalTest @IndividualTest
   Scenario: Add 2nd menu item
     Given I have a menu item name "Mutton Biryani" and price 300
     When I add that menu item
     Then Menu item with name "Mutton Biryani" should be added
-    Then Clear the list
 
   @RegularTest @FinalTest @IndividualTest
   Scenario: Add 3rd menu item
     Given I have a menu item name "Fish Biryani" and price 300
     When I add that menu item
     Then It should give an error message like "Duplicate Item"
-    Then Clear the list
 
   @RegularTest @ExistenceTest
   Scenario: Check both items are present
